@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="accordion accordion-flush mt-4"
+            id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-button collapsed">
+                    <button class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expaned="false"
+                    aria-controls="collapseTwo">
+                C++    
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+                <div class="accordion-body">C++ is a high level programming language used for developing applications, games, etc.</div>
+            </div>                    
+            </div>
+        </div>
+    </div>        
+    <div class="alert alert-primary" role="alert">
+        Your payment is successfully completed
+    </div>
+    <nav>
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Library</li>
+    </ol>
+    </nav>
+</body>
+</html>

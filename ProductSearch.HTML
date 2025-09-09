@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3">     
+    <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Product ID</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Product Image</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>100</td>
+              <td>Dell</td>
+              <td>$3500</td>
+              <td><img src="Dell.jpg"></td>
+              <td>
+                <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Add to Cart</a>
+              </td>
+            </tr>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Add Product</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row p-3 m-1">
+                                <div class="col">
+                                    <input type="number" class="form-control" name="Product_Id" placeholder="Enter the product id: ">
+                                </div>
+                            </div>
+                            <div class="row p-3 m-1">
+                                <div class="col">
+                                    <input type="text" class="form-control" name="ProductName" placeholder="Enter the product name: ">
+                                </div>
+                            </div>
+                            <div class="row p-3 m-1">
+                                <div class="col">
+                                    <input type="number" class="form-control" name="ProductPrice" placeholder="Enter the product price: ">
+                                </div>
+                            </div>
+                            <div class="row p-3 m-1">
+                                <div class="col">
+                                    <img src="Dell.jpg">
+                                </div>
+                            </div>
+                            <div class="row p-3 m-1 text-center">
+                            </div>
+                
+                        </div>                        
+                    </div>
+              
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    <input type="submit" class="btn btn-success " name="btn" value="Save product">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+          </tbody>
+        </table>
+      </div>
+    
+</body>
+</html>
+
+

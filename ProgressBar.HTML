@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressbar</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+        </script>
+        
+</head>
+<body>
+    <div class="progress">
+        <div class="progrss-bar bg-success" style="width:25%"></div>
+    </div>
+<button class="btn btn-danger" data-bs-toggle="tooltip" title="Progress">Tooltip</button>
+<button class="btn btn-danger" data-bs-toggle="Popover" title="Progress" data-bs-content="Some content inside the popover">Tooltip</button>
+
+</body>
+</html>
