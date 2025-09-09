@@ -1,0 +1,29 @@
+.mydiv{
+    width:20%;
+    height: 300px;
+    background-color:rgba(190, 224, 224, 0.342);
+     margin:10px;
+      padding:10px;
+       position:absolute;
+       left: 30px;
+       top:100px;
+       border-color:rgb(33, 112, 9);
+       border-style:solid;
+       border-width: 2px;
+        outline-style:solid;
+        outline-color:rgba(190, 224, 224, 0.342);
+        outline-width:10px;
+         border-radius: 30px;
+         vertical-align:middle;
+}
+.mybackground{
+   background-image: url('chef1.jpg');
+    background-repeat: no-repeat;
+     background-size:cover;
+}
+.myhead{
+    color:white;
+    padding: 15px;
+    text-align: center;
+     padding-top: 70px;
+}
